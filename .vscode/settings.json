@@ -115,7 +115,6 @@
   
     "github.copilot.enable": {
       "*": true,
-      "markdown": true,
       "plaintext": false,
     },
     "cSpell.allowCompoundWords": true,
