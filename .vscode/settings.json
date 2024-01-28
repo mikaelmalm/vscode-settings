@@ -7,6 +7,7 @@
   "editor.lineNumbers": "interval",
   "editor.renderWhitespace": "boundary",
   "workbench.list.smoothScrolling": true,
+  "workbench.colorTheme": "Dracula",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
@@ -146,4 +147,5 @@
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US,sv,sv-SE",
+  "window.zoomLevel": -1,
 }
