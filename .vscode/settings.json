@@ -14,12 +14,13 @@
   "editor.inlineSuggest.enabled": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never",
-    },
+  },
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.eol": "\n",
@@ -64,59 +65,85 @@
     "**/CHANGELOG*": true,
     "**/LICENSE*": true,
   },
-
   // User settings
   "extensions.autoUpdate": "onlyEnabledExtensions",
-
-    // ========== Extension configs ========== 
-    "emmet.showSuggestionsAsSnippets": true,
-    "emmet.triggerExpansionOnTab": false,
-    "errorLens.enabledDiagnosticLevels": [
-      "warning",
-      "error"
-    ],
-    "errorLens.excludeBySource": [
-      "cSpell",
-      "Grammarly",
-      "eslint"
-    ],
-  
-    // ESLint config: https://github.com/antfu/eslint-config
-    "eslint.codeAction.showDocumentation": {
-      "enable": true
+  // ========== Extension configs ========== 
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "error"
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell",
+    "Grammarly",
+    "eslint"
+  ],
+  // ESLint config: https://github.com/antfu/eslint-config
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    {
+      "rule": "style/*",
+      "severity": "off"
     },
-    "eslint.quiet": true,
-    // Silent the stylistic rules in you IDE, but still auto fix them
-    "eslint.rules.customizations": [
-      { "rule": "style/*", "severity": "off" },
-      { "rule": "format/*", "severity": "off" },
-      { "rule": "*-indent", "severity": "off" },
-      { "rule": "*-spacing", "severity": "off" },
-      { "rule": "*-spaces", "severity": "off" },
-      { "rule": "*-order", "severity": "off" },
-      { "rule": "*-dangle", "severity": "off" },
-      { "rule": "*-newline", "severity": "off" },
-      { "rule": "*quotes", "severity": "off" },
-      { "rule": "*semi", "severity": "off" }
-    ],
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact",
-      "vue",
-      "html",
-      "markdown",
-      "json",
-      "jsonc",
-      "yaml",
-      "toml"
-    ],
-  
-    "github.copilot.enable": {
-      "*": true,
-      "plaintext": false,
+    {
+      "rule": "format/*",
+      "severity": "off"
     },
-    "cSpell.allowCompoundWords": true,
-    "cSpell.language": "en,en-US,sv,sv-SE",
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+  },
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-US,sv,sv-SE",
 }
