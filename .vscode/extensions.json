@@ -13,6 +13,9 @@
     "naumovs.color-highlight",
     "znck.grammarly",
     "dracula-theme.theme-dracula",
+    "esbenp.prettier-vscode",
+    "yoavbls.pretty-ts-errors",
+    "firefox-devtools.vscode-firefox-debug",
   ]
 }
 
